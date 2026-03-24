@@ -212,6 +212,7 @@ client.on("voiceStateUpdate", async (oldState, newState) => {
 
     // Check if a user is in a voice channel and muted for more than 5 minutes
     if (
+      false && // Added false to disable this feature
       oldState.channelId !== afkChannelId &&
       newState.channelId &&
       newState.channelId !== afkChannelId &&
