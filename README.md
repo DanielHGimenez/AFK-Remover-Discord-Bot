@@ -14,6 +14,14 @@ A professional Discord bot designed to manage your server's AFK users effectivel
 
 ---
 
+## 🤖 How to Use
+
+To add the live version of this BOT into your discord server, use the following link:
+
+[![Static Badge](https://img.shields.io/badge/DisconnectAFK-Add-blue?style=for-the-badge&logo=discord)](https://discord.com/oauth2/authorize?client_id=1486025631048400946&permissions=8&integration_type=0&scope=bot)
+
+---
+
 ## 🛠️ Prerequisites
 
 Before you start, ensure you have the following installed:
@@ -78,17 +86,17 @@ npm start
 
 ## 💻 Commands
 
-### `/setup`
-
-- 📋 **Description**: Configure the bot for your server.
-- 🔧 **Options**:
-  - `channel`: Set the AFK voice channel (name or ID).
-  - `roles`: Specify roles allowed to modify configurations (comma-separated).
-  - `language`: Choose the server's language.
-
 ### `/afkinfo`
 
-- 📜 **Description**: Display the current AFK settings for the server, including the channel, roles, and language.
+- 📋 **Description**: Display the current AFK settings for the server, including the channel, roles, and language.
+
+### `/move-deafened-to-afk-channel`
+
+- 📋 **Description**: Allows the move of deafened users to AFK channel.
+
+### `/minutes-to-move-deafened`
+
+- 📋 **Description**: Sets the number of minutes to wait before moving deafened users to AFK channel.
 
 ---
 
