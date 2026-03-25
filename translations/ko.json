@@ -35,7 +35,6 @@
   "setup_channel_description": "AFK로 설정할 음성 채널 (이름 또는 ID).",
   "setup_roles_description": "봇을 설정할 수 있는 역할을 지정하세요 (쉼표로 구분된 ID 또는 이름).",
   "setup_language_description": "이 서버의 언어를 입력하세요 (예: en_us, pt_br).",
-  "afkinfo_description": "현재 AFK 채널, 역할, 언어 구성을 표시합니다.",
   "setafk_description": "봇의 AFK 채널을 설정합니다.",
   "setafk_channel_description": "AFK로 설정할 음성 채널 (이름 또는 ID).",
   "setroles_description": "봇 설정이 허용된 역할을 설정합니다.",
@@ -48,5 +47,10 @@
   "available_languages_label": "사용 가능한 언어",
   "invalid_language_footer": "유효한 언어 코드를 제공해주세요.",
   "language_set": "언어가 {language}(으)로 설정되었습니다.",
-  "afk_channel_set": "AFK 채널이 {channel}(으)로 설정되었습니다."
+  "afk_channel_set": "AFK 채널이 {channel}(으)로 설정되었습니다.",
+  "afkinfo_cmd_description": "현재 BOT 구성을 표시합니다.",
+  "afkinfo_move_deafened_afk": "🔇 **청각 장애 사용자 연결 해제**",
+  "afkinfo_minutes_to_move_deafened": "⏰ **연결 해제까지 분**",
+  "move-deafened-to-afk-channel_cmd_description": "청각 장애 사용자를 AFK 채널로 이동할 수 있도록 합니다.",
+  "minutes-to-move-deafened_cmd_description": "청각 장애 사용자를 AFK 채널로 이동하기 전에 대기할 시간(분)을 설정합니다."
 }

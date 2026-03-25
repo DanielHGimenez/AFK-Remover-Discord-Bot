@@ -35,7 +35,6 @@
   "setup_channel_description": "AFKとして設定するボイスチャンネル（名前またはID）。",
   "setup_roles_description": "ボットを設定することを許可されたロールを指定します（カンマ区切りのIDまたは名前）。",
   "setup_language_description": "このサーバーの言語を入力します（例: en_us, pt_br）。",
-  "afkinfo_description": "現在のAFKチャンネル、ロール、および言語の設定を表示します。",
   "setafk_description": "ボットのAFKチャンネルを設定します。",
   "setafk_channel_description": "AFKとして設定するボイスチャンネル（名前またはID）。",
   "setroles_description": "ボットの設定を許可されたロールを設定します。",
@@ -48,5 +47,10 @@
   "available_languages_label": "利用可能な言語",
   "invalid_language_footer": "有効な言語コードを指定してください。",
   "language_set": "言語が {language} に設定されました。",
-  "afk_channel_set": "AFKチャンネルが {channel} に設定されました。"
+  "afk_channel_set": "AFKチャンネルが {channel} に設定されました。",
+  "afkinfo_cmd_description": "現在のBOT設定を表示します。",
+  "afkinfo_move_deafened_afk": "🔇 **デフユーザーを切断**",
+  "afkinfo_minutes_to_move_deafened": "⏰ **切断までの時間（分）**",
+  "move-deafened-to-afk-channel_cmd_description": "デフユーザーをAFKチャンネルに移動することを許可します。",
+  "minutes-to-move-deafened_cmd_description": "デフユーザーをAFKチャンネルに移動するまでの待機時間（分）を設定します。"
 }

@@ -35,7 +35,6 @@
   "setup_channel_description": "A hangcsatorna, amelyet AFK-ként szeretne beállítani (név vagy ID).",
   "setup_roles_description": "Adja meg az engedélyezett szerepköröket a bot konfigurálásához (ID-k vagy nevek, vesszővel elválasztva).",
   "setup_language_description": "Adja meg a szerver nyelvét (pl. en_us, pt_br).",
-  "afkinfo_description": "Megjeleníti az aktuális AFK csatorna, szerepkörök és nyelv konfigurációját.",
   "setafk_description": "Állítsa be az AFK csatornát a bot számára.",
   "setafk_channel_description": "A hangcsatorna, amelyet AFK-ként szeretne beállítani (név vagy ID).",
   "setroles_description": "Állítsa be az engedélyezett szerepköröket a bot konfigurálásához.",
@@ -48,5 +47,10 @@
   "available_languages_label": "Elérhető nyelvek",
   "invalid_language_footer": "Kérlek, adj meg egy érvényes nyelvkódot.",
   "language_set": "A nyelv beállítva: {language}.",
-  "afk_channel_set": "Az AFK csatorna beállítva: {channel}."
+  "afk_channel_set": "Az AFK csatorna beállítva: {channel}.",
+  "afkinfo_cmd_description": "Megjeleníti az aktuális BOT konfigurációt.",
+  "afkinfo_move_deafened_afk": "🔇 **Süket felhasználók leválasztása**",
+  "afkinfo_minutes_to_move_deafened": "⏰ **Percek a leválasztásig**",
+  "move-deafened-to-afk-channel_cmd_description": "Lehetővé teszi a süket felhasználók áthelyezését az AFK csatornába.",
+  "minutes-to-move-deafened_cmd_description": "Beállítja a süket felhasználók AFK csatornába való áthelyezése előtt várandó percek számát."
 }

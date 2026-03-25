@@ -35,7 +35,6 @@
   "setup_channel_description": "Der Sprachkanal, der als AFK-Kanal festgelegt werden soll (Name oder ID).",
   "setup_roles_description": "Geben Sie die Rollen an, die berechtigt sind, den Bot zu konfigurieren (kommagetrennte IDs oder Namen).",
   "setup_language_description": "Geben Sie die Sprache für diesen Server ein (z. B. en_us, pt_br).",
-  "afkinfo_description": "Zeigt die aktuelle Konfiguration von AFK-Kanal, Rollen und Sprache an.",
   "setafk_description": "Legen Sie den AFK-Kanal für den Bot fest.",
   "setafk_channel_description": "Der Sprachkanal, der als AFK-Kanal festgelegt werden soll (Name oder ID).",
   "setroles_description": "Legen Sie die Rollen fest, die berechtigt sind, den Bot zu konfigurieren.",
@@ -48,5 +47,10 @@
   "available_languages_label": "Verfügbare Sprachen",
   "invalid_language_footer": "Bitte geben Sie einen gültigen Sprachcode ein.",
   "language_set": "Sprache wurde auf {language} gesetzt.",
-  "afk_channel_set": "AFK-Kanal wurde auf {channel} gesetzt."
+  "afk_channel_set": "AFK-Kanal wurde auf {channel} gesetzt.",
+  "afkinfo_cmd_description": "Zeigt die aktuelle BOT-Konfiguration an.",
+  "afkinfo_move_deafened_afk": "🔇 **Stummgeschaltete trennen**",
+  "afkinfo_minutes_to_move_deafened": "⏰ **Minuten bis zum Trennen**",
+  "move-deafened-to-afk-channel_cmd_description": "Ermöglicht das Verschieben von stummgeschalteten Benutzern in den AFK-Kanal.",
+  "minutes-to-move-deafened_cmd_description": "Legt die Anzahl der Minuten fest, die gewartet werden soll, bevor stummgeschaltete Benutzer in den AFK-Kanal verschoben werden."
 }

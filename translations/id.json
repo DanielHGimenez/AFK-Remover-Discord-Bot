@@ -35,7 +35,6 @@
   "setup_channel_description": "Saluran suara untuk diatur sebagai AFK (nama atau ID).",
   "setup_roles_description": "Sebutkan peran yang diizinkan untuk mengonfigurasi bot (ID atau nama yang dipisahkan dengan koma).",
   "setup_language_description": "Masukkan bahasa untuk server ini (misalnya, en_us, pt_br).",
-  "afkinfo_description": "Menampilkan konfigurasi saluran AFK, peran, dan bahasa saat ini.",
   "setafk_description": "Atur saluran AFK untuk bot.",
   "setafk_channel_description": "Saluran suara untuk diatur sebagai AFK (nama atau ID).",
   "setroles_description": "Atur peran yang diizinkan untuk mengonfigurasi bot.",
@@ -48,5 +47,10 @@
   "available_languages_label": "Bahasa yang Tersedia",
   "invalid_language_footer": "Harap berikan kode bahasa yang valid.",
   "language_set": "Bahasa telah diatur ke {language}.",
-  "afk_channel_set": "Saluran AFK telah diatur ke {channel}."
+  "afk_channel_set": "Saluran AFK telah diatur ke {channel}.",
+  "afkinfo_cmd_description": "Menampilkan konfigurasi BOT saat ini.",
+  "afkinfo_move_deafened_afk": "🔇 **Putuskan pengguna tuli**",
+  "afkinfo_minutes_to_move_deafened": "⏰ **Menit untuk memutus**",
+  "move-deafened-to-afk-channel_cmd_description": "Memungkinkan pemindahan pengguna tuli ke saluran AFK.",
+  "minutes-to-move-deafened_cmd_description": "Menetapkan jumlah menit yang harus ditunggu sebelum memindahkan pengguna tuli ke saluran AFK."
 }

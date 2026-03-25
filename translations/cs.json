@@ -35,7 +35,6 @@
   "setup_channel_description": "Hlasový kanál, který bude nastaven jako AFK (jméno nebo ID).",
   "setup_roles_description": "Uveďte role, které mohou konfigurovat bota (ID nebo jména oddělená čárkou).",
   "setup_language_description": "Zadejte jazyk pro tento server (např. en_us, pt_br).",
-  "afkinfo_description": "Zobrazuje aktuální konfiguraci AFK kanálu, rolí a jazyka.",
   "setafk_description": "Nastavte AFK kanál pro bota.",
   "setafk_channel_description": "Hlasový kanál, který bude nastaven jako AFK (jméno nebo ID).",
   "setroles_description": "Nastavte role, které mohou konfigurovat bota.",
@@ -48,5 +47,10 @@
   "available_languages_label": "Dostupné jazyky",
   "invalid_language_footer": "Zadejte platný kód jazyka.",
   "language_set": "Jazyk byl nastaven na {language}.",
-  "afk_channel_set": "AFK kanál byl nastaven na {channel}."
+  "afk_channel_set": "AFK kanál byl nastaven na {channel}.",
+  "afkinfo_cmd_description": "Zobrazuje aktuální konfiguraci BOT-a.",
+  "afkinfo_move_deafened_afk": "🔇 **Odpojit umlčené**",
+  "afkinfo_minutes_to_move_deafened": "⏰ **Minuty do odpojení**",
+  "move-deafened-to-afk-channel_cmd_description": "Umožňuje přesouvání umlčených uživatelů do AFK kanálu.",
+  "minutes-to-move-deafened_cmd_description": "Nastavuje počet minut čekání před přesunutím umlčených uživatelů do AFK kanálu."
 }

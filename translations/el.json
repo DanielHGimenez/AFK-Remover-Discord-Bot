@@ -35,7 +35,6 @@
   "setup_channel_description": "Το κανάλι φωνής που θα οριστεί ως AFK (όνομα ή ID).",
   "setup_roles_description": "Προσδιορίστε τους ρόλους που επιτρέπεται να διαμορφώνουν το bot (διαχωρισμένα με κόμμα ID ή ονόματα).",
   "setup_language_description": "Εισάγετε τη γλώσσα για αυτόν τον διακομιστή (π.χ. en_us, pt_br).",
-  "afkinfo_description": "Εμφανίζει την τρέχουσα διαμόρφωση του καναλιού AFK, των ρόλων και της γλώσσας.",
   "setafk_description": "Ορίστε το κανάλι AFK για το bot.",
   "setafk_channel_description": "Το κανάλι φωνής που θα οριστεί ως AFK (όνομα ή ID).",
   "setroles_description": "Ορίστε τους ρόλους που επιτρέπεται να διαμορφώνουν το bot.",
@@ -48,5 +47,10 @@
   "available_languages_label": "Διαθέσιμες γλώσσες",
   "invalid_language_footer": "Παρακαλώ παρέχετε έναν έγκυρο κωδικό γλώσσας.",
   "language_set": "Η γλώσσα ορίστηκε ως {language}.",
-  "afk_channel_set": "Το κανάλι AFK ορίστηκε ως {channel}."
+  "afk_channel_set": "Το κανάλι AFK ορίστηκε ως {channel}.",
+  "afkinfo_cmd_description": "Εμφανίζει την τρέχουσα διαμόρφωση του BOT.",
+  "afkinfo_move_deafened_afk": "🔇 **Αποσύνδεση κωφών**",
+  "afkinfo_minutes_to_move_deafened": "⏰ **Λεπτά μέχρι την αποσύνδεση**",
+  "move-deafened-to-afk-channel_cmd_description": "Επιτρέπει τη μετακίνηση κωφών χρηστών στο κανάλι AFK.",
+  "minutes-to-move-deafened_cmd_description": "Ορίζει τον αριθμό λεπτών αναμονής πριν τη μετακίνηση κωφών χρηστών στο κανάλι AFK."
 }

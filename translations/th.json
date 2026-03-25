@@ -35,7 +35,6 @@
   "setup_channel_description": "ช่องเสียงที่จะตั้งค่าเป็น AFK (ชื่อหรือ ID)",
   "setup_roles_description": "ระบุบทบาทที่อนุญาตให้กำหนดค่าบอท (ID หรือชื่อคั่นด้วยเครื่องหมายจุลภาค)",
   "setup_language_description": "ป้อนภาษาสำหรับเซิร์ฟเวอร์นี้ (เช่น en_us, pt_br)",
-  "afkinfo_description": "แสดงการตั้งค่า AFK ช่อง บทบาท และภาษาในปัจจุบัน",
   "setafk_description": "ตั้งค่า AFK ช่องสำหรับบอท",
   "setafk_channel_description": "ช่องเสียงที่จะตั้งค่าเป็น AFK (ชื่อหรือ ID)",
   "setroles_description": "ตั้งค่าบทบาทที่อนุญาตให้กำหนดค่าบอท",
@@ -48,5 +47,10 @@
   "available_languages_label": "ภาษาที่มีให้เลือก",
   "invalid_language_footer": "กรุณาระบุรหัสภาษาที่ถูกต้อง",
   "language_set": "ภาษาได้ถูกตั้งค่าเป็น {language}.",
-  "afk_channel_set": "AFK ช่องได้ถูกตั้งค่าเป็น {channel}."
+  "afk_channel_set": "AFK ช่องได้ถูกตั้งค่าเป็น {channel}.",
+  "afkinfo_cmd_description": "แสดงการกำหนดค่า BOT ปัจจุบัน",
+  "afkinfo_move_deafened_afk": "🔇 **ตัดการเชื่อมต่อผู้ใช้ที่หูหนวก**",
+  "afkinfo_minutes_to_move_deafened": "⏰ **นาทีก่อนตัดการเชื่อมต่อ**",
+  "move-deafened-to-afk-channel_cmd_description": "อนุญาตให้ย้ายผู้ใช้ที่หูหนวกไปยังช่อง AFK",
+  "minutes-to-move-deafened_cmd_description": "กำหนดจำนวนนาทีที่ต้องรอก่อนย้ายผู้ใช้ที่หูหนวกไปยังช่อง AFK"
 }

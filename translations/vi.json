@@ -35,7 +35,6 @@
   "setup_channel_description": "Kênh thoại sẽ được đặt làm AFK (tên hoặc ID).",
   "setup_roles_description": "Chỉ định các vai trò được phép cấu hình bot (ID hoặc tên phân cách bằng dấu phẩy).",
   "setup_language_description": "Nhập ngôn ngữ cho máy chủ này (ví dụ: en_us, pt_br).",
-  "afkinfo_description": "Hiển thị cấu hình hiện tại của kênh AFK, vai trò và ngôn ngữ.",
   "setafk_description": "Đặt kênh AFK cho bot.",
   "setafk_channel_description": "Kênh thoại sẽ được đặt làm AFK (tên hoặc ID).",
   "setroles_description": "Đặt các vai trò được phép cấu hình bot.",
@@ -48,5 +47,10 @@
   "available_languages_label": "Ngôn ngữ khả dụng",
   "invalid_language_footer": "Vui lòng cung cấp mã ngôn ngữ hợp lệ.",
   "language_set": "Ngôn ngữ đã được đặt thành {language}.",
-  "afk_channel_set": "Kênh AFK đã được đặt thành {channel}."
+  "afk_channel_set": "Kênh AFK đã được đặt thành {channel}.",
+  "afkinfo_cmd_description": "Hiển thị cấu hình BOT hiện tại.",
+  "afkinfo_move_deafened_afk": "🔇 **Ngắt kết nối người dùng bị điếc**",
+  "afkinfo_minutes_to_move_deafened": "⏰ **Phút trước khi ngắt kết nối**",
+  "move-deafened-to-afk-channel_cmd_description": "Cho phép di chuyển người dùng bị điếc sang kênh AFK.",
+  "minutes-to-move-deafened_cmd_description": "Đặt số phút chờ trước khi di chuyển người dùng bị điếc sang kênh AFK."
 }

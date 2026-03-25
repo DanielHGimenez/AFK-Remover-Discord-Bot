@@ -35,7 +35,6 @@
   "setup_channel_description": "Гласовият канал, който ще бъде зададен като AFK (име или ID).",
   "setup_roles_description": "Посочете ролите, които могат да конфигурират бота (разделени със запетаи ID или имена).",
   "setup_language_description": "Въведете езика за този сървър (например en_us, pt_br).",
-  "afkinfo_description": "Показва текущата конфигурация на AFK канала, ролите и езика.",
   "setafk_description": "Задайте AFK канала за бота.",
   "setafk_channel_description": "Гласовият канал, който ще бъде зададен като AFK (име или ID).",
   "setroles_description": "Задайте ролите, които могат да конфигурират бота.",
@@ -48,5 +47,10 @@
   "available_languages_label": "Налични езици",
   "invalid_language_footer": "Моля, предоставете валиден код на езика.",
   "language_set": "Езикът е зададен на {language}.",
-  "afk_channel_set": "AFK каналът е зададен на {channel}."
+  "afk_channel_set": "AFK каналът е зададен на {channel}.",
+  "afkinfo_cmd_description": "Показва текущата конфигурация на БОТ-а.",
+  "afkinfo_move_deafened_afk": "🔇 **Изключване на заглушени**",
+  "afkinfo_minutes_to_move_deafened": "⏰ **Минути до изключване**",
+  "move-deafened-to-afk-channel_cmd_description": "Позволява преместването на заглушени потребители в AFK канала.",
+  "minutes-to-move-deafened_cmd_description": "Задава броя минути на изчакване преди преместването на заглушени потребители в AFK канала."
 }

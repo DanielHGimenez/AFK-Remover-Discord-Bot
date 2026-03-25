@@ -35,7 +35,6 @@
   "setup_channel_description": "Röstkanalen som ska ställas in som AFK (namn eller ID).",
   "setup_roles_description": "Ange rollerna som får konfigurera boten (kommaavgränsade ID:n eller namn).",
   "setup_language_description": "Ange språket för denna server (t.ex. en_us, pt_br).",
-  "afkinfo_description": "Visar den aktuella AFK-kanalen, rollerna och språkets konfiguration.",
   "setafk_description": "Ställ in AFK-kanalen för boten.",
   "setafk_channel_description": "Röstkanalen som ska ställas in som AFK (namn eller ID).",
   "setroles_description": "Ställ in rollerna som får konfigurera boten.",
@@ -48,5 +47,10 @@
   "available_languages_label": "Tillgängliga språk",
   "invalid_language_footer": "Ange en giltig språkkod.",
   "language_set": "Språket har ställts in på {language}.",
-  "afk_channel_set": "AFK-kanalen har ställts in på {channel}."
+  "afk_channel_set": "AFK-kanalen har ställts in på {channel}.",
+  "afkinfo_cmd_description": "Visar den aktuella BOT-konfigurationen.",
+  "afkinfo_move_deafened_afk": "🔇 **Koppla från döva användare**",
+  "afkinfo_minutes_to_move_deafened": "⏰ **Minuter tills frånkoppling**",
+  "move-deafened-to-afk-channel_cmd_description": "Tillåter att döva användare flyttas till AFK-kanalen.",
+  "minutes-to-move-deafened_cmd_description": "Anger antalet minuter att vänta innan döva användare flyttas till AFK-kanalen."
 }

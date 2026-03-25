@@ -35,7 +35,6 @@
   "setup_channel_description": "要設置為 AFK 的語音頻道（名稱或 ID）。",
   "setup_roles_description": "指定允許配置機器人的角色（用逗號分隔的 ID 或名稱）。",
   "setup_language_description": "輸入此伺服器的語言（例如，en_us，pt_br）。",
-  "afkinfo_description": "顯示當前 AFK 頻道、角色和語言配置。",
   "setafk_description": "為機器人設置 AFK 頻道。",
   "setafk_channel_description": "要設置為 AFK 的語音頻道（名稱或 ID）。",
   "setroles_description": "設置允許配置機器人的角色。",
@@ -48,5 +47,10 @@
   "available_languages_label": "可用語言",
   "invalid_language_footer": "請提供有效的語言代碼。",
   "language_set": "語言已設置為 {language}。",
-  "afk_channel_set": "AFK 頻道已設置為 {channel}。"
+  "afk_channel_set": "AFK 頻道已設置為 {channel}。",
+  "afkinfo_cmd_description": "顯示目前BOT配置。",
+  "afkinfo_move_deafened_afk": "🔇 **斷開耳聾用戶**",
+  "afkinfo_minutes_to_move_deafened": "⏰ **斷開連接等待分鐘數**",
+  "move-deafened-to-afk-channel_cmd_description": "允許將耳聾用戶移動到AFK頻道。",
+  "minutes-to-move-deafened_cmd_description": "設定在將耳聾用戶移動到AFK頻道之前等待的分鐘數。"
 }

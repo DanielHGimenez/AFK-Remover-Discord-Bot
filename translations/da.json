@@ -35,7 +35,6 @@
   "setup_channel_description": "Stemmekanalen, der skal indstilles som AFK (navn eller ID).",
   "setup_roles_description": "Angiv de roller, der har tilladelse til at konfigurere botten (komma-separerede ID'er eller navne).",
   "setup_language_description": "Indtast sproget for denne server (f.eks. en_us, pt_br).",
-  "afkinfo_description": "Viser den aktuelle konfiguration af AFK-kanal, roller og sprog.",
   "setafk_description": "Indstil AFK-kanalen for botten.",
   "setafk_channel_description": "Stemmekanalen, der skal indstilles som AFK (navn eller ID).",
   "setroles_description": "Indstil de roller, der har tilladelse til at konfigurere botten.",
@@ -48,5 +47,10 @@
   "available_languages_label": "Tilgængelige sprog",
   "invalid_language_footer": "Angiv venligst en gyldig sprogkode.",
   "language_set": "Sproget er blevet indstillet til {language}.",
-  "afk_channel_set": "AFK-kanalen er blevet indstillet til {channel}."
+  "afk_channel_set": "AFK-kanalen er blevet indstillet til {channel}.",
+  "afkinfo_cmd_description": "Viser den aktuelle BOT-konfiguration.",
+  "afkinfo_move_deafened_afk": "🔇 **Afbryd døve brugere**",
+  "afkinfo_minutes_to_move_deafened": "⏰ **Minutter til afbrydelse**",
+  "move-deafened-to-afk-channel_cmd_description": "Tillader flytning af døve brugere til AFK-kanalen.",
+  "minutes-to-move-deafened_cmd_description": "Angiver antallet af minutter, der skal ventes, inden døve brugere flyttes til AFK-kanalen."
 }

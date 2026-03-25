@@ -35,7 +35,6 @@
   "setup_channel_description": "AFK के रूप में सेट किया जाने वाला वॉयस चैनल (नाम या आईडी)।",
   "setup_roles_description": "उन भूमिकाओं का उल्लेख करें जिन्हें बॉट को कॉन्फ़िगर करने की अनुमति है (कॉमा से अलग किए गए आईडी या नाम)।",
   "setup_language_description": "इस सर्वर के लिए भाषा दर्ज करें (जैसे, en_us, pt_br)।",
-  "afkinfo_description": "वर्तमान AFK चैनल, भूमिकाओं, और भाषा कॉन्फ़िगरेशन दिखाता है।",
   "setafk_description": "बॉट के लिए AFK चैनल सेट करें।",
   "setafk_channel_description": "AFK के रूप में सेट किया जाने वाला वॉयस चैनल (नाम या आईडी)।",
   "setroles_description": "उन भूमिकाओं को सेट करें जिन्हें बॉट को कॉन्फ़िगर करने की अनुमति है।",
@@ -48,5 +47,10 @@
   "available_languages_label": "उपलब्ध भाषाएँ",
   "invalid_language_footer": "कृपया एक वैध भाषा कोड प्रदान करें।",
   "language_set": "भाषा को {language} पर सेट किया गया है।",
-  "afk_channel_set": "AFK चैनल {channel} पर सेट किया गया है।"
+  "afk_channel_set": "AFK चैनल {channel} पर सेट किया गया है।",
+  "afkinfo_cmd_description": "वर्तमान BOT कॉन्फ़िगरेशन प्रदर्शित करता है।",
+  "afkinfo_move_deafened_afk": "🔇 **बहरे उपयोगकर्ताओं को डिस्कनेक्ट करें**",
+  "afkinfo_minutes_to_move_deafened": "⏰ **डिस्कनेक्ट करने के मिनट**",
+  "move-deafened-to-afk-channel_cmd_description": "बहरे उपयोगकर्ताओं को AFK चैनल में ले जाने की अनुमति देता है।",
+  "minutes-to-move-deafened_cmd_description": "बहरे उपयोगकर्ताओं को AFK चैनल में ले जाने से पहले प्रतीक्षा करने के लिए मिनटों की संख्या सेट करता है।"
 }

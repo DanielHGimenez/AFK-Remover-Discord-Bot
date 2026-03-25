@@ -20,32 +20,39 @@ const CLIENT_ID = process.env.CLIENT_ID;
 const db = new Database("server_config.db");
 db.exec(`
   CREATE TABLE IF NOT EXISTS guilds (
-    guild_id TEXT PRIMARY KEY,
-    server_name TEXT,
-    afk_channel_id TEXT,
-    afk_channel_name TEXT,
-    language TEXT DEFAULT 'en_us'
+    guild_id TEXT PRIMARY KEY, 
+    server_name TEXT, 
+    afk_channel_id TEXT, 
+    afk_channel_name TEXT, 
+    language TEXT DEFAULT 'en_us', 
+    allow_move_deafened_to_afk INTEGER DEFAULT 0, 
+    minutes_to_move_deafened INTEGER DEFAULT 10
   )
 `);
 
 // Helper function to save guild config to SQLite
 function saveGuildConfig(guildId, config) {
   const stmt = db.prepare(`
-    INSERT INTO guilds (guild_id, server_name, afk_channel_id, afk_channel_name, language)
-    VALUES (@guildId, @serverName, @afkChannelId, @afkChannelName, @language)
+    INSERT INTO guilds (guild_id, server_name, afk_channel_id, afk_channel_name, language, allow_move_deafened_to_afk, minutes_to_move_deafened)
+    VALUES (@guildId, @serverName, @afkChannelId, @afkChannelName, @language, @allowMoveDeafenedToAFK, @minutesToMoveDeafened)
     ON CONFLICT(guild_id) DO UPDATE SET
-      server_name = COALESCE(guilds.server_name, @serverName),
-      afk_channel_id = COALESCE(guilds.afk_channel_id, @afkChannelId),
-      afk_channel_name = COALESCE(guilds.afk_channel_name, @afkChannelName),
-      language = COALESCE(guilds.language, @language)
+      server_name = COALESCE(@serverName, guilds.server_name),
+      afk_channel_id = COALESCE(@afkChannelId, guilds.afk_channel_id),
+      afk_channel_name = COALESCE(@afkChannelName, guilds.afk_channel_name),
+      language = COALESCE(@language, guilds.language),
+      allow_move_deafened_to_afk = COALESCE(@allowMoveDeafenedToAFK, guilds.allow_move_deafened_to_afk),
+      minutes_to_move_deafened = COALESCE(@minutesToMoveDeafened, guilds.minutes_to_move_deafened)
   `);
-  stmt.run({
+  const params = {
     guildId,
     serverName: config.serverName,
     afkChannelId: config.afkChannelId,
     afkChannelName: config.afkChannelName,
     language: config.language,
-  });
+    allowMoveDeafenedToAFK: (config.allowMoveDeafenedToAFK ? 1 : 0),
+    minutesToMoveDeafened: (config.minutesToMoveDeafened || 10),
+  };
+  const result = stmt.run(params);
 }
 
 // Helper function to get guild config from SQLite
@@ -58,6 +65,8 @@ function getGuildConfig(guildId) {
       afkChannelId: row.afk_channel_id,
       afkChannelName: row.afk_channel_name,
       language: row.language,
+      allowMoveDeafenedToAFK: row.allow_move_deafened_to_afk == 1,
+      minutesToMoveDeafened: row.minutes_to_move_deafened,
     };
   }
   return null;
@@ -135,7 +144,33 @@ async function registerSlashCommands() {
     const commands = [
       {
         name: "afkinfo",
-        description: t(null, "afkinfo_description"),
+        description: t(null, "afkinfo_cmd_description"),
+      },
+      {
+        name: "move-deafened-to-afk-channel",
+        description: t(null, "move-deafened-to-afk-channel_cmd_description"),
+        options: [
+          {
+            name: "allow",
+            description: t(null, "move-deafened-to-afk-channel_cmd_description"),
+            type: 5,
+            required: true,
+          }
+        ]
+      },
+      {
+        name: "minutes-to-move-deafened",
+        description: t(null, "minutes-to-move-deafened_cmd_description"),
+        options: [
+          {
+            name: "minutes",
+            description: t(null, "minutes-to-move-deafened_cmd_description"),
+            type: 4,
+            required: true,
+            min_value: 0,
+            max_value: 60
+          }
+        ]
       },
     ];
 
@@ -210,9 +245,9 @@ client.on("voiceStateUpdate", async (oldState, newState) => {
       await newState.disconnect();
     }
 
-    // Check if a user is in a voice channel and muted for more than 5 minutes
+    // Check if a user is in a voice channel and muted for more than N minutes defined in the config
     if (
-      false && // Added false to disable this feature
+      guildConfig.allowMoveDeafenedToAFK &&
       oldState.channelId !== afkChannelId &&
       newState.channelId &&
       newState.channelId !== afkChannelId &&
@@ -231,7 +266,7 @@ client.on("voiceStateUpdate", async (oldState, newState) => {
           // Move user to AFK channel if still muted and deafened after 5 minutes
           await currentState.setChannel(afkChannelId);
         }
-      }, 5 * 60 * 1000); // 5 minutes
+      }, guildConfig.minutesToMoveDeafened * 60 * 1000); // 5 minutes
     }
   } catch (error) {
     console.error(t(newState.guild.id, "error_voice_state_update"), error);
@@ -240,7 +275,7 @@ client.on("voiceStateUpdate", async (oldState, newState) => {
 
 // Command interaction handler
 client.on("interactionCreate", async (interaction) => {
-  if (!interaction.isCommand()) return;
+  if (!interaction.isCommand() && !interaction.isChatInputCommand()) return;
 
   const { commandName, guildId } = interaction;
 
@@ -260,18 +295,56 @@ client.on("interactionCreate", async (interaction) => {
         {
           name: t(guildId, "afkinfo_channel"),
           value: guildConfig.afkChannelName || t(guildId, "afkinfo_not_set"),
-          inline: true,
+          inline: false,
         },
         {
           name: t(guildId, "afkinfo_language"),
           value: guildConfig.language?.toUpperCase() || "EN_US",
-          inline: true,
+          inline: false,
+        },
+        {
+          name: t(guildId, "afkinfo_move_deafened_afk"),
+          value: guildConfig.allowMoveDeafenedToAFK ? "Enabled" : "Disabled",
+          inline: false,
+        },
+        {
+          name: t(guildId, "afkinfo_minutes_to_move_deafened"),
+          value: guildConfig.minutesToMoveDeafened.toString(),
+          inline: false,
         }
       )
       .setFooter({ text: t(guildId, "afkinfo_footer") })
       .setTimestamp();
 
     return interaction.reply({ embeds: [embed], ephemeral: true });
+  }
+  else if (commandName === "move-deafened-to-afk-channel") {
+    const guildConfig = getGuildConfig(guildId);
+    if (!guildConfig) {
+      return interaction.reply({
+        content: t(guildId, "no_configuration"),
+        ephemeral: true,
+      });
+    }
+
+    const allow = interaction.options.getBoolean("allow");
+    guildConfig.allowMoveDeafenedToAFK = allow;
+    saveGuildConfig(guildId, guildConfig);
+    return interaction.reply({ content: `Allowed: ${allow}`, ephemeral: true });
+  }
+  else if (commandName === "minutes-to-move-deafened") {
+    const guildConfig = getGuildConfig(guildId);
+    if (!guildConfig) {
+      return interaction.reply({
+        content: t(guildId, "no_configuration"),
+        ephemeral: true,
+      });
+    }
+
+    const minutes = interaction.options.getInteger("minutes");
+    guildConfig.minutesToMoveDeafened = minutes;
+    saveGuildConfig(guildId, guildConfig);
+    return interaction.reply({ content: `Minutes: ${minutes}`, ephemeral: true });
   }
 });
 

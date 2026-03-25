@@ -14,5 +14,9 @@
   "commands_registered_successfully": "Comandos slash registrados com sucesso!",
   "error_registering_commands": "Erro ao registrar comandos:",
   "error_updating_server_data": "Erro ao atualizar os dados do servidor para o guild {guildId}:",
-  "afkinfo_description": "Exibe o canal AFK atual e a configuração de idioma."
+  "afkinfo_cmd_description": "Exibe a configuração atual do BOT.",
+  "afkinfo_move_deafened_afk": "🔇 **Desconectar ensurdecidos**",
+  "afkinfo_minutes_to_move_deafened": "⏰ **Minutos para desconectar**",
+  "move-deafened-to-afk-channel_cmd_description": "Permite mover usuários ensurdecidos para o canal AFK.",
+  "minutes-to-move-deafened_cmd_description": "Define o número de minutos a aguardar antes de mover os usuários ensurdecidos para o canal AFK."
 }

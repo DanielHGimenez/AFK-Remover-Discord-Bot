@@ -35,7 +35,6 @@
   "setup_channel_description": "Het spraakkanaal dat als AFK moet worden ingesteld (naam of ID).",
   "setup_roles_description": "Geef de rollen op die de bot mogen configureren (komma-gescheiden ID's of namen).",
   "setup_language_description": "Voer de taal in voor deze server (bijv. en_us, pt_br).",
-  "afkinfo_description": "Toont de huidige AFK-kanaal-, rollen- en taalconfiguratie.",
   "setafk_description": "Stel het AFK-kanaal in voor de bot.",
   "setafk_channel_description": "Het spraakkanaal dat als AFK moet worden ingesteld (naam of ID).",
   "setroles_description": "Stel de rollen in die de bot mogen configureren.",
@@ -48,5 +47,10 @@
   "available_languages_label": "Beschikbare talen",
   "invalid_language_footer": "Geef een geldige taalcode op.",
   "language_set": "Taal is ingesteld op {language}.",
-  "afk_channel_set": "AFK-kanaal is ingesteld op {channel}."
+  "afk_channel_set": "AFK-kanaal is ingesteld op {channel}.",
+  "afkinfo_cmd_description": "Toont de huidige BOT-configuratie.",
+  "afkinfo_move_deafened_afk": "🔇 **Verbreek verbinding gedempt**",
+  "afkinfo_minutes_to_move_deafened": "⏰ **Minuten tot verbreking**",
+  "move-deafened-to-afk-channel_cmd_description": "Maakt het mogelijk om gebruikers met uitgeschakeld geluid naar het AFK-kanaal te verplaatsen.",
+  "minutes-to-move-deafened_cmd_description": "Stelt het aantal minuten in om te wachten voordat gebruikers met uitgeschakeld geluid naar het AFK-kanaal worden verplaatst."
 }

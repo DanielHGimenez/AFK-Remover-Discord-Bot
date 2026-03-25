@@ -35,7 +35,6 @@
   "setup_channel_description": "AFK olarak ayarlanacak ses kanalı (ad veya ID).",
   "setup_roles_description": "Botu yapılandırmasına izin verilen rolleri belirtin (virgülle ayrılmış ID'ler veya adlar).",
   "setup_language_description": "Bu sunucu için dili girin (ör. en_us, pt_br).",
-  "afkinfo_description": "Geçerli AFK kanalı, roller ve dil yapılandırmasını gösterir.",
   "setafk_description": "Bot için AFK kanalını ayarlayın.",
   "setafk_channel_description": "AFK olarak ayarlanacak ses kanalı (ad veya ID).",
   "setroles_description": "Botu yapılandırmasına izin verilen rolleri ayarlayın.",
@@ -48,5 +47,10 @@
   "available_languages_label": "Mevcut Diller",
   "invalid_language_footer": "Geçerli bir dil kodu sağlayın.",
   "language_set": "Dil {language} olarak ayarlandı.",
-  "afk_channel_set": "AFK kanalı {channel} olarak ayarlandı."
+  "afk_channel_set": "AFK kanalı {channel} olarak ayarlandı.",
+  "afkinfo_cmd_description": "Mevcut BOT yapılandırmasını görüntüler.",
+  "afkinfo_move_deafened_afk": "🔇 **Sağır kullanıcıları kes**",
+  "afkinfo_minutes_to_move_deafened": "⏰ **Bağlantı kesilmesine kadar dakika**",
+  "move-deafened-to-afk-channel_cmd_description": "Sağır kullanıcıların AFK kanalına taşınmasına izin verir.",
+  "minutes-to-move-deafened_cmd_description": "Sağır kullanıcıların AFK kanalına taşınmadan önce beklenecek dakika sayısını ayarlar."
 }

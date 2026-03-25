@@ -35,7 +35,6 @@
   "setup_channel_description": "El canal de voz para configurar como AFK (nombre o ID).",
   "setup_roles_description": "Menciona los roles permitidos para configurar el bot (IDs o nombres separados por comas).",
   "setup_language_description": "Introduce el idioma para este servidor (por ejemplo, en_us, pt_br).",
-  "afkinfo_description": "Muestra la configuración actual del canal AFK, roles e idioma.",
   "setafk_description": "Configura el canal AFK para el bot.",
   "setafk_channel_description": "El canal de voz para configurar como AFK (nombre o ID).",
   "setroles_description": "Configura los roles permitidos para configurar el bot.",
@@ -48,5 +47,10 @@
   "available_languages_label": "Idiomas disponibles",
   "invalid_language_footer": "Proporciona un código de idioma válido.",
   "language_set": "El idioma se configuró en {language}.",
-  "afk_channel_set": "El canal AFK se configuró en {channel}."
+  "afk_channel_set": "El canal AFK se configuró en {channel}.",
+  "afkinfo_cmd_description": "Muestra la configuración actual del BOT.",
+  "afkinfo_move_deafened_afk": "🔇 **Desconectar silenciados**",
+  "afkinfo_minutes_to_move_deafened": "⏰ **Minutos para desconectar**",
+  "move-deafened-to-afk-channel_cmd_description": "Permite mover a los usuarios silenciados al canal AFK.",
+  "minutes-to-move-deafened_cmd_description": "Establece el número de minutos a esperar antes de mover a los usuarios silenciados al canal AFK."
 }

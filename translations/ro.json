@@ -35,7 +35,6 @@
   "setup_channel_description": "Canalul vocal care va fi setat ca AFK (nume sau ID).",
   "setup_roles_description": "Specificați rolurile permise pentru configurarea botului (ID-uri sau nume separate prin virgulă).",
   "setup_language_description": "Introduceți limba pentru acest server (de ex. en_us, pt_br).",
-  "afkinfo_description": "Afișează configurația actuală a canalului AFK, a rolurilor și a limbii.",
   "setafk_description": "Setați canalul AFK pentru bot.",
   "setafk_channel_description": "Canalul vocal care va fi setat ca AFK (nume sau ID).",
   "setroles_description": "Setați rolurile permise pentru configurarea botului.",
@@ -48,5 +47,10 @@
   "available_languages_label": "Limbi disponibile",
   "invalid_language_footer": "Vă rugăm să specificați un cod de limbă valid.",
   "language_set": "Limba a fost setată la {language}.",
-  "afk_channel_set": "Canalul AFK a fost setat la {channel}."
+  "afk_channel_set": "Canalul AFK a fost setat la {channel}.",
+  "afkinfo_cmd_description": "Afișează configurația curentă a BOT-ului.",
+  "afkinfo_move_deafened_afk": "🔇 **Deconectează utilizatorii surzi**",
+  "afkinfo_minutes_to_move_deafened": "⏰ **Minute până la deconectare**",
+  "move-deafened-to-afk-channel_cmd_description": "Permite mutarea utilizatorilor surzi în canalul AFK.",
+  "minutes-to-move-deafened_cmd_description": "Setează numărul de minute de așteptat înainte de mutarea utilizatorilor surzi în canalul AFK."
 }

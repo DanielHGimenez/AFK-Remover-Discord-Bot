@@ -35,7 +35,6 @@
   "setup_channel_description": "Kanał głosowy, który ma zostać ustawiony jako AFK (nazwa lub ID).",
   "setup_roles_description": "Wskaż role uprawnione do konfiguracji bota (ID lub nazwy oddzielone przecinkami).",
   "setup_language_description": "Wprowadź język dla tego serwera (np. en_us, pt_br).",
-  "afkinfo_description": "Wyświetla aktualną konfigurację kanału AFK, ról i języka.",
   "setafk_description": "Ustaw kanał AFK dla bota.",
   "setafk_channel_description": "Kanał głosowy, który ma zostać ustawiony jako AFK (nazwa lub ID).",
   "setroles_description": "Ustaw role uprawnione do konfiguracji bota.",
@@ -48,5 +47,10 @@
   "available_languages_label": "Dostępne języki",
   "invalid_language_footer": "Podaj poprawny kod języka.",
   "language_set": "Język został ustawiony na {language}.",
-  "afk_channel_set": "Kanał AFK został ustawiony na {channel}."
+  "afk_channel_set": "Kanał AFK został ustawiony na {channel}.",
+  "afkinfo_cmd_description": "Wyświetla aktualną konfigurację BOT-a.",
+  "afkinfo_move_deafened_afk": "🔇 **Rozłącz ogłuszonych**",
+  "afkinfo_minutes_to_move_deafened": "⏰ **Minuty do rozłączenia**",
+  "move-deafened-to-afk-channel_cmd_description": "Umożliwia przenoszenie ogłuszonych użytkowników do kanału AFK.",
+  "minutes-to-move-deafened_cmd_description": "Ustawia liczbę minut oczekiwania przed przeniesieniem ogłuszonych użytkowników do kanału AFK."
 }

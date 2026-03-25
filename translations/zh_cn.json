@@ -35,7 +35,6 @@
   "setup_channel_description": "要设置为AFK的语音频道（名称或ID）。",
   "setup_roles_description": "指定允许配置机器人的角色（用逗号分隔的ID或名称）。",
   "setup_language_description": "输入此服务器的语言（例如，en_us，pt_br）。",
-  "afkinfo_description": "显示当前AFK频道、角色和语言配置。",
   "setafk_description": "为机器人设置AFK频道。",
   "setafk_channel_description": "要设置为AFK的语音频道（名称或ID）。",
   "setroles_description": "设置允许配置机器人的角色。",
@@ -48,5 +47,10 @@
   "available_languages_label": "可用语言",
   "invalid_language_footer": "请提供有效的语言代码。",
   "language_set": "语言已设置为 {language}。",
-  "afk_channel_set": "AFK频道已设置为 {channel}。"
+  "afk_channel_set": "AFK频道已设置为 {channel}。",
+  "afkinfo_cmd_description": "显示当前BOT配置。",
+  "afkinfo_move_deafened_afk": "🔇 **断开耳聋用户**",
+  "afkinfo_minutes_to_move_deafened": "⏰ **断开连接等待分钟数**",
+  "move-deafened-to-afk-channel_cmd_description": "允许将耳聋用户移动到AFK频道。",
+  "minutes-to-move-deafened_cmd_description": "设置在将耳聋用户移动到AFK频道之前等待的分钟数。"
 }

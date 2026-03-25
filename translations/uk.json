@@ -35,7 +35,6 @@
   "setup_channel_description": "Голосовий канал, який буде встановлено як AFK (ім'я або ID).",
   "setup_roles_description": "Вкажіть ролі, які можуть налаштовувати бота (ID або імена, розділені комами).",
   "setup_language_description": "Введіть мову для цього сервера (наприклад, en_us, pt_br).",
-  "afkinfo_description": "Відображає поточне налаштування AFK-каналу, ролей та мови.",
   "setafk_description": "Встановіть AFK-канал для бота.",
   "setafk_channel_description": "Голосовий канал, який буде встановлено як AFK (ім'я або ID).",
   "setroles_description": "Встановіть ролі, які можуть налаштовувати бота.",
@@ -48,5 +47,10 @@
   "available_languages_label": "Доступні мови",
   "invalid_language_footer": "Будь ласка, вкажіть дійсний код мови.",
   "language_set": "Мову встановлено на {language}.",
-  "afk_channel_set": "AFK-канал встановлено на {channel}."
+  "afk_channel_set": "AFK-канал встановлено на {channel}.",
+  "afkinfo_cmd_description": "Відображає поточну конфігурацію БОТ-а.",
+  "afkinfo_move_deafened_afk": "🔇 **Відключити заглушених**",
+  "afkinfo_minutes_to_move_deafened": "⏰ **Хвилини до відключення**",
+  "move-deafened-to-afk-channel_cmd_description": "Дозволяє переміщати заглушених користувачів до AFK-каналу.",
+  "minutes-to-move-deafened_cmd_description": "Встановлює кількість хвилин очікування перед переміщенням заглушених користувачів до AFK-каналу."
 }

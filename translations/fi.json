@@ -35,7 +35,6 @@
   "setup_channel_description": "Puhekanava, joka asetetaan AFK-kanavaksi (nimi tai ID).",
   "setup_roles_description": "Anna roolit, joilla on oikeus konfiguroida boti (pilkuilla erotetut ID:t tai nimet).",
   "setup_language_description": "Anna tämän palvelimen kieli (esim. en_us, pt_br).",
-  "afkinfo_description": "Näyttää nykyisen AFK-kanavan, roolit ja kielen konfiguraation.",
   "setafk_description": "Aseta AFK-kanava botille.",
   "setafk_channel_description": "Puhekanava, joka asetetaan AFK-kanavaksi (nimi tai ID).",
   "setroles_description": "Aseta roolit, joilla on oikeus konfiguroida boti.",
@@ -48,5 +47,10 @@
   "available_languages_label": "Saatavilla olevat kielet",
   "invalid_language_footer": "Anna kelvollinen kielikoodi.",
   "language_set": "Kieli on asetettu kieleksi {language}.",
-  "afk_channel_set": "AFK-kanava on asetettu kanavaksi {channel}."
+  "afk_channel_set": "AFK-kanava on asetettu kanavaksi {channel}.",
+  "afkinfo_cmd_description": "Näyttää nykyisen BOT-konfiguraation.",
+  "afkinfo_move_deafened_afk": "🔇 **Katkaise kuuroutuneet**",
+  "afkinfo_minutes_to_move_deafened": "⏰ **Minuuttia ennen katkaisemista**",
+  "move-deafened-to-afk-channel_cmd_description": "Mahdollistaa kuuroutuneiden käyttäjien siirtämisen AFK-kanavalle.",
+  "minutes-to-move-deafened_cmd_description": "Asettaa minuuttien määrän, jota odotetaan ennen kuuroutuneiden käyttäjien siirtämistä AFK-kanavalle."
 }

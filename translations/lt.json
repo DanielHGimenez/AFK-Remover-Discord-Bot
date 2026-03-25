@@ -35,7 +35,6 @@
   "setup_channel_description": "Balso kanalas, kuris bus nustatytas kaip AFK (pavadinimas arba ID).",
   "setup_roles_description": "Nurodykite vaidmenis, kurie gali konfigūruoti botą (ID arba pavadinimai, atskirti kableliais).",
   "setup_language_description": "Įveskite kalbą šiam serveriui (pvz., en_us, pt_br).",
-  "afkinfo_description": "Rodo dabartinę AFK kanalo, vaidmenų ir kalbos konfigūraciją.",
   "setafk_description": "Nustatykite AFK kanalą botui.",
   "setafk_channel_description": "Balso kanalas, kuris bus nustatytas kaip AFK (pavadinimas arba ID).",
   "setroles_description": "Nustatykite vaidmenis, kurie gali konfigūruoti botą.",
@@ -48,5 +47,10 @@
   "available_languages_label": "Galimos kalbos",
   "invalid_language_footer": "Prašome nurodyti galiojantį kalbos kodą.",
   "language_set": "Kalba nustatyta į {language}.",
-  "afk_channel_set": "AFK kanalas nustatytas į {channel}."
+  "afk_channel_set": "AFK kanalas nustatytas į {channel}.",
+  "afkinfo_cmd_description": "Rodo dabartinę BOT konfigūraciją.",
+  "afkinfo_move_deafened_afk": "🔇 **Atjungti kurčiuosius**",
+  "afkinfo_minutes_to_move_deafened": "⏰ **Minutės iki atjungimo**",
+  "move-deafened-to-afk-channel_cmd_description": "Leidžia perkelti kurčiuosius vartotojus į AFK kanalą.",
+  "minutes-to-move-deafened_cmd_description": "Nustato minučių skaičių, kurį reikia palaukti prieš perkeliant kurčiuosius vartotojus į AFK kanalą."
 }

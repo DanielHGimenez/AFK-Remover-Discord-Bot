@@ -35,7 +35,6 @@
   "setup_channel_description": "Glasovni kanal koji će biti postavljen kao AFK (ime ili ID).",
   "setup_roles_description": "Navedite uloge kojima je dopušteno konfigurirati bota (ID-ovi ili nazivi odvojeni zarezima).",
   "setup_language_description": "Unesite jezik za ovaj poslužitelj (npr. en_us, pt_br).",
-  "afkinfo_description": "Prikazuje trenutnu konfiguraciju AFK kanala, uloga i jezika.",
   "setafk_description": "Postavite AFK kanal za bota.",
   "setafk_channel_description": "Glasovni kanal koji će biti postavljen kao AFK (ime ili ID).",
   "setroles_description": "Postavite uloge kojima je dopušteno konfigurirati bota.",
@@ -48,5 +47,10 @@
   "available_languages_label": "Dostupni jezici",
   "invalid_language_footer": "Molimo navedite važeći kod jezika.",
   "language_set": "Jezik je postavljen na {language}.",
-  "afk_channel_set": "AFK kanal je postavljen na {channel}."
+  "afk_channel_set": "AFK kanal je postavljen na {channel}.",
+  "afkinfo_cmd_description": "Prikazuje trenutnu konfiguraciju BOT-a.",
+  "afkinfo_move_deafened_afk": "🔇 **Isključi oglušene**",
+  "afkinfo_minutes_to_move_deafened": "⏰ **Minute do isključivanja**",
+  "move-deafened-to-afk-channel_cmd_description": "Omogućuje premještanje oglušenih korisnika u AFK kanal.",
+  "minutes-to-move-deafened_cmd_description": "Postavlja broj minuta čekanja prije premještanja oglušenih korisnika u AFK kanal."
 }

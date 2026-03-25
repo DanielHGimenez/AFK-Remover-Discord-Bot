@@ -3,6 +3,8 @@
   "afkinfo_title": "**AFK Configuration**",
   "afkinfo_channel": "🔊 **AFK Channel**",
   "afkinfo_language": "🌐 **Language**",
+  "afkinfo_move_deafened_afk": "🔇 **Move deafened to AFK channel**",
+  "afkinfo_minutes_to_move_deafened": "⏰ **Minutes to move deafened to AFK channel**",
   "afkinfo_not_set": "Not configured",
   "afkinfo_footer": "AFK Configuration Details",
   "server_data_updated": "Server data updated successfully at {time}.",
@@ -14,5 +16,7 @@
   "commands_registered_successfully": "Slash commands registered successfully!",
   "error_registering_commands": "Error registering commands:",
   "error_updating_server_data": "Error updating server data for guild {guildId}:",
-  "afkinfo_description": "Displays the current AFK channel and language configuration."
+  "afkinfo_cmd_description": "Displays the current configurations.",
+  "move-deafened-to-afk-channel_cmd_description": "Allows the move of deafened users to AFK channel.",
+  "minutes-to-move-deafened_cmd_description": "Sets the number of minutes to wait before moving deafened users to AFK channel."
 }
